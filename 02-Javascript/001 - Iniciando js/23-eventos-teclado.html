@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>JS - eventos com o mouse</title>
+		<meta charset="utf-8">
+
+		<script>
+			function acao1() {
+				alert('Evento disparado')
+			}
+
+
+		</script>
+
+
+	</head>
+	<body>
+		
+		<form>
+			<label>onkeydown</label>	
+			<input onkeydown="acao1()" type="text" placeholder="Ao pressionar qqr tecla" style="width: 300px;"><hr>
+			
+			<label>onkeypress</label>	
+			<input onkeypress="acao1()" type="text" placeholder="Ao pressionar tecla de caracteres" style="width: 300px;"><hr>
+
+			<label>onkeyup</label>	
+			<input onkeyup="acao1()" type="text" placeholder="Ao soltar qqr tecla" style="width: 300px;"><hr>
+
+		</form>
+	</body>
+</html>

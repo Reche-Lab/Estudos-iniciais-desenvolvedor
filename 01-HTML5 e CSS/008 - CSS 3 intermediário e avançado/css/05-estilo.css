@@ -1,0 +1,25 @@
+/*--- estilizando Tabelas ---*/
+
+body{ font-family: "Trebuchet MS", Helvetica, sans-serif; }
+
+#tabela1{
+	width: 600px;
+	border-collapse: separate; /*separated, collapse */
+}
+
+#tabela1  th, #tabela1 td{
+	padding: 7px;
+} 
+
+#tabela1  th{
+	text-transform: uppercase;
+	border-top: 1px solid #CCC;
+	border-bottom: 1px solid gray;
+	text-align: left;
+	font-size: 90%;
+	letter-spacing: 0.1em
+}
+
+.alternado{background: #efefef;}
+
+#tabela1 tr:hover {background: #33FFC6;}

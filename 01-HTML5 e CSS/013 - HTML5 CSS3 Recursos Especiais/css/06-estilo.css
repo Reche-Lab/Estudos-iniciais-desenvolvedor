@@ -1,0 +1,24 @@
+/*TRANSITION*/
+
+#caixa{
+	width: 200px;
+	height: 200px;
+	background-color: yellow;
+	font-size: 25px;
+	font-weight: 900;
+	color: red;
+	padding: 20px;
+	text-align: center;
+	padding-top: 50px;
+	box-sizing: border-box;
+	/*transition: all 3s;*/ /*essa transição serve para qualquer alteração nessa classe*/
+}
+
+#caixa:hover {
+	width: 400px;
+	background-color: orange;
+	font-size: 40px;
+	color: white;
+	/*transition: width 3s, background-color 3s, font-size 3s;*/
+	transition: all 3s;	 
+}

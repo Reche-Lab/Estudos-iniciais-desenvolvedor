@@ -1,0 +1,42 @@
+<html>
+	<head>
+		<title>For</title>
+
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <meta charset="utf-8">
+
+    <script type="text/javascript">
+      
+      var listaFuncionarios = ['Viviane', 'Rosangela', 'Miguel', 'Lucas', 'Fernanda']
+
+      console.log(listaFuncionarios)
+
+      listaFuncionarios.forEach(function(valor, indice, array) {
+        console.log('indice: ' + indice + '| valor: ' + valor)
+
+        if (valor == 'Lucas') {
+          array[indice] = 'um novo valor'
+          console.log(array[indice])
+        }
+      })
+// ---------------------------------------------
+      console.log('---------------------------------')
+      
+      var f = function(valor, indice){
+        console.log(valor, indice)
+      }
+      listaFuncionarios.forEach(f)
+
+    </script>
+    
+
+	</head>
+
+  <body>
+    
+    </div>
+    
+  </body>	
+
+</html>

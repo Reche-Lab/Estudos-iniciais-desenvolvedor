@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>JS - Funções Parametros Default</title>
+		<meta charset="utf-8">
+		
+		<!-- v6 <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script> -->
+		<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+		<script type="text/babel">
+			
+			//caso utilizamos function(x=5) significa que o deafault de x é 5, quando o parametro não for definido na chamada da função.
+			let quadrado = function(x) { 
+				return x * x
+			}
+
+			let quadrado2 = x => x * x //return implicito, quando houver apenas 1 parametro e uma especificação da função
+
+			let quadrado3 = (x, y) => x * y //caso houvessem operadores como if/else e/ou outros, eles precisariam estar encapsulados nas {} e o return se isso for desejado
+
+			let parOuImpar = function(numero) {
+				if(numero % 2 === 0) {
+					return 'par'
+				} else {
+					return 'ímpar'
+				}
+			}
+
+			//mesma função utilizando o operador ternario
+			let parOuImpar2 = numero => numero % 2 === 0 ? 'par' :'ímpar'
+
+			document.write( quadrado + "<br>" )
+			document.write( quadrado(8) )
+			document.write( '<br><hr><br>' )
+
+			document.write( quadrado2 + "<br>" )
+			document.write( quadrado2(8) )
+			document.write( '<br><hr><br>' )
+
+			document.write( quadrado3 + "<br>" )
+			document.write( quadrado3(8, 8) )
+			document.write( '<br><hr><br>' )
+
+			document.write(parOuImpar + '<br>')
+			document.write(`<b> ${parOuImpar(5)} </b>`)
+			document.write( '<br><hr><br>' )
+
+			document.write(parOuImpar2 + '<br>')
+			document.write(`<b> ${parOuImpar2(5)} </b>`)
+
+			//---console.log---relembrando forEach em Arrays
+
+	      	var listaFuncionarios = ['Viviane', 'Rosangela', 'Miguel', 'Lucas', 'Fernanda'] //---Array
+	      	console.log(listaFuncionarios) //---print Array
+	      	listaFuncionarios.forEach( (x, y) => console.log(x, y)) //---print valor + indice da array 
+
+			;
+		</script>
+
+	</head>
+	<body>
+
+	</body>
+</html>

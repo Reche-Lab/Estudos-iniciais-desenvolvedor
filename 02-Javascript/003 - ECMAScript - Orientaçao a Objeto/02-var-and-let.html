@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	    <title></title>
+	   
+		
+		<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+		
+		
+		<script type="text/babel">
+			var serie = 'friends'
+
+			{ var serie = 'The Walking Dead'
+				
+				{ var serie = 'Ocean'
+				console.log('dentro bloco2: ' + serie)
+				}
+		
+				console.log('dentro bloco1: ' + serie)
+			}
+
+			console.log('fora do bloco: ' + serie)
+
+			console.log('----------------LET---------------')
+			let serie1 = 'friends'
+
+			{let serie1 = 'The Walking Dead'
+				
+				{let serie1 = 'Ocean'
+				console.log('dentro bloco2: ' + serie1)
+				}
+
+				console.log('dentro bloco1: ' + serie1 )
+			}
+
+			console.log('fora do bloco: ' + serie1 )
+
+		</script>
+	</head>
+
+	<body>
+	    <div id="output"></div>
+	</body>
+</html>

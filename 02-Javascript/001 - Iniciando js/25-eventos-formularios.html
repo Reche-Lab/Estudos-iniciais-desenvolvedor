@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>JS - eventos em formulários</title>
+		<meta charset="utf-8">	
+
+
+
+	</head>
+	<body>
+		<h2 style="display: right; padding: 10px;">Abrir console do inspecionar</h2>		
+		<label>onfocus</label>
+		<input onfocus="console.log('teste onfocus')" type="text" placeholder="função acionada ao entrar no input" style="width: 250px"> <hr>
+
+		<label>onblur</label>
+		<input onblur="console.log('teste onblur')" type="text" placeholder="função acionada tirar o foco do input" style="width: 250px"> <hr>
+
+		<label>onchange</label>
+		<select onchange="console.log('Seleção foi modificada')">
+			<option>-- Selecione --</option>
+			<option value="1">-- Primeira opção --</option>
+			<option value="2">-- Segunda opção --</option>
+			
+		</select>
+
+	</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>JS - funcoes anonimas</title>
+		<meta charset="utf-8">
+
+		<script>
+			
+			function exibirArtigo(id, callbackSucesso, callbackErro) {
+
+				if (true) {
+					callbackSucesso('Funções de callback em JS', 'funções de callback são muito utilizadas...') 
+				} else {
+					callbackErro('Erro ao recuperar os dados')
+				}
+				
+			}
+
+			var callbackSucesso = function(titulo, desricao) {
+				document.write('<h1>' + titulo + '</h>')
+				document.write('<hr>')
+				document.write('<h1>' + descricao + '</h>')
+
+			}
+			var callbackErro = function(erro) {
+				document.write('<p>' + erro + '</p>')
+			}
+
+			exibirArtigo(1, callbackSucesso, callbackErro)
+
+
+		</script>
+
+
+	</head>
+	<body>
+		
+
+	</body>
+</html>

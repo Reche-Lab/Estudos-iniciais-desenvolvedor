@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>JS - funcoes date</title>
+		<meta charset="utf-8">
+
+		<script>
+			
+			var data = new Date()
+
+			document.write(data.getDate() + ' - getDate() - traz o dia')
+			document.write('<hr>')
+			document.write(data.getMonth() + 1 + ' - getMonth() + 1 - traz o mês')
+			document.write('<hr>')
+			document.write(data.getFullYear() + ' - getFullYear() - traz o ano')
+			document.write('<hr>')
+			document.write(data.getDate() + '/' + (data.getMonth() + 1) + '/' + data.getFullYear() )
+			document.write('<hr>')
+			document.write('<hr>')
+			//-----------------------------------------
+
+			//adicionado dias
+			document.write(data.toString())
+			document.write('<hr>')
+			data.setDate(data.getDate() + 720)
+			document.write(data.toString())
+
+			//adicionado meses
+			document.write('<hr>')
+			data.setMonth(data.getMonth() + 1)
+			document.write(data.toString())
+
+			//adicionado anos
+			document.write('<hr>')
+			data.setFullYear(data.getFullYear() + 1)
+			document.write(data.toString())
+
+			document.write('<hr>')
+			document.write('<hr>')
+
+			//-----------------------------------------
+
+			//15/01/2017
+			var data1 = new Date(2017, 0, 15)
+
+			//23/02/2017
+			var data2 = new Date(2017, 1, 23)
+
+			document.write(data1.toString())
+			document.write('<br>')
+			document.write(data2.toString())
+
+			document.write('<hr>')
+			//converter data para algo que possamos calcular
+			document.write('data1 = ' + data1.getTime())
+			document.write('<br>')
+			document.write('data2 = ' + data2.getTime())
+			document.write('<br>')
+			//encontrar a qtde de milisegundos entre as duas datas
+			document.write('data2 - data1 = ' + (data2.getTime() - data1.getTime()))
+			document.write('<hr>')
+
+			//1 dia = 24h
+			//1 h = 60min
+			//1 min = 60seg
+			//1 seg = 1000 milisegundos
+			document.write((1 * 24 * 60 * 60 * 1000) + ' milisegundos/dia')
+			document.write('<br>')
+			document.write('A quantidade de dias entre as datas 1 e 2 = ')
+			document.write(Math.ceil((data2.getTime() - data1.getTime()) / 86400000))
+
+		</script>
+
+
+	</head>
+	<body>
+		
+
+	</body>
+</html>

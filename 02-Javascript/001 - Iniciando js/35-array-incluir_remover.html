@@ -1,0 +1,51 @@
+<html>
+	<head>
+		<title>Array - Incluir/Excluir</title>
+
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <meta charset="utf-8">
+
+    <script type="text/javascript">
+      
+      var lista_coisas = Array()
+
+        lista_coisas['frutas'] = Array()
+          lista_coisas['frutas'][0] = 'Banana'
+          lista_coisas['frutas'][1] = 'Maçã'
+          lista_coisas['frutas'][2] = 'Morango'
+          lista_coisas['frutas'][3] = 'Uva'
+
+        lista_coisas['pessoas'] = []
+          lista_coisas['pessoas']['a'] = 'João'
+          lista_coisas['pessoas']['b'] = 'José'
+          lista_coisas['pessoas']['c'] = 'Maria'
+                    
+        // incluir elemento no final da array
+        lista_coisas['frutas'].push("Graviola")
+
+        // incluir elemento no início da array
+        lista_coisas['frutas'].unshift("Açaí")        
+        console.log(lista_coisas)
+//------------------------------------------------
+        // excluir elementos no final da array
+        lista_coisas['frutas'].pop()
+
+        // excluir elementos no inicio da array
+        lista_coisas['frutas'].shift()
+        console.log(lista_coisas)
+//------------------------------------------------
+        lista_coisas.push('Carros')
+        console.log(lista_coisas)
+
+    </script>
+    
+
+	</head>
+
+  <body>
+    <h2 class="btn btn-warning btn-lg m-3">Array Incluir / Excluir - Abrir inspecionar/console</h2>
+    
+  </body>	
+
+</html>

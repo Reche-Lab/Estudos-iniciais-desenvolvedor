@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Flexbox - Flexible Box Layout</title>
+		<meta charset="utf-8">
+
+		<!-- browsers normlize -->
+		<link rel="stylesheet" type="text/css" href="css/normalize.css">
+
+		<!-- Formatação css -->
+		<link rel="stylesheet" type="text/css" href="css/11-estilo.css">
+
+		<!--[if lt IE 9]>
+			<script src="js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<h3>Flexbox - trabalhando ordem dos itens</h3>
+		<div id="conteudo">
+			<div class="item ordem4">01</div>
+			<div class="item ordem1">02</div>
+			<div class="item ordem3">03</div>
+			<div class="item ordem2">04</div>
+		</div>
+		<h3>Flexbox - trabalhando flex-grow</h#>
+		<div id="conteudo">
+			<div class="item grow1">01 - este item tenta cobrir toda parte que resta - "flex-grow:1"</div>
+			<div class="item grow2">02 - Este item fica 2x maior que o item 01 - "flex-grow: 2"</div>
+			<div class="item">03</div>
+			<div class="item">04</div>
+		</div>
+		<h3>Flexbox - trabalhando flex-shrink</h3>
+		<div id="conteudo" class="conteudo2">
+			<div class="item shrink1">01 - "s h r i n k: 1"</div>
+			<div class="item shrink2">02 - "s h r i n k: 2"</div>
+			<div class="item shrink3">03 - "s h r i n k:5</div>
+			<div class="item">04</div>
+		</div>
+		<h3>Flexbox - trabalhando flex-basis</h3>
+		<div id="conteudo">
+			<div class="item">01</div>
+			<div class="item">02</div>
+			<div class="item">03</div>
+			<div class="item">04</div>
+		</div>
+
+	</body>
+</html>

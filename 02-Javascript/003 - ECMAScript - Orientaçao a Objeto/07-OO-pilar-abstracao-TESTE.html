@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>JS - Funções Parametros Default</title>
+		<meta charset="utf-8">
+
+		<!-- Bootstrap -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+		
+		<!-- v6 <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script> -->
+		<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+		<script type="text/babel">
+			
+			class ContaDigital {
+				constructor() {
+					this.saldo = 0
+					this.deposito = 0
+					this.saque = 0
+					this.limite = 100
+				}
+
+				depositar(valorDeposito) {
+					this.saldo += valorDeposito
+				}
+
+				sacar(valorSaque) {
+					if (valorSaque > this.saldo + this.limite ) {
+						alert(`Esse valor é superior ao seu saldo e limite. O valor máximo para saque é de R$ ${this.saldo + this.limite}. Insira um novo valor.`)
+					} else {
+						this.saldo -= valorSaque
+					}
+				}
+
+				saldoAtual(){
+					return this.saldo
+				}
+			}
+
+			let x - new ContaDigital()
+
+			x.
+			
+			;
+		</script>
+
+	</head>
+	<body>
+		<h2>Conta Bancária</h2>
+		<h3 id="saldoDaConta" class="color-info"></h3>
+		<input type="text" id="valorSaque">
+		<button class="btn btn-warning" onclick="atualizaSaldo">SACAR</button>
+		<input type="text" id="valorDeposito">
+		<button class="btn btn-info">DEPOSITAR</button>
+	</body>
+</html>

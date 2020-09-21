@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Cores e imagem de fundo</title>
+		<meta charset="utf-8">
+		<style type="text/css">
+			/*body{background-color: #f2f2f2;}*/	
+			.fundo{background-color: gray;
+				color: yellow;}
+			body{background-image: url('imagens/yoshi.png');
+				
+				/* repeat-x, repeat-y, no-repeat, repeat */
+				background-repeat: no-repeat;
+
+				/* scrool, fixed*/
+				background-attachment: fixed;
+
+				/* primeiro valor: left, center, right
+				   segundo valor: top, center, bottom */
+				background-position: center center;}
+			.fundobody{background-color: orange;}
+
+				/* tudo isso num único código */
+			.fundounico{background: orange url:'imagens/yoshi.png' no-repeat fixed left center;}
+
+		</style>
+
+	</head>
+	<body class="fundobody">
+		<h1 class="fundo">Título da pagina de cores e imagem de fundo</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+		<br><br><br><br><br><br><br><br><br>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non	proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+		<br><br><br><br><br><br><br><br><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+
+	</body>
+</html>

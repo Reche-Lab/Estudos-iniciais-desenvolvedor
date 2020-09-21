@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title></title>
+        <meta charset="utf-8">
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+        <script type="text/babel">
+            
+            //destructuring
+            let produto = {
+                descricao: 'Notebook',
+                preco: 1800,
+                detalhes: {
+                    fabricante: 'abc',
+                    modelo: 'xyz'
+                }
+            }
+
+            //let { descricao, preco } = produto
+            let { descricao: d, preco: p, desconto = '5%' } = produto
+            console.log(d, p, desconto)
+            console.log('-----------------')
+
+
+            let {detalhes: {fabricante: f, modelo}} = produto
+            console.log(f, modelo)
+
+           
+
+
+        ;    
+        </script>
+    </head>
+
+    <body>
+    </body>
+
+</html>

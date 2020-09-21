@@ -1,0 +1,11 @@
+/* modelo de caixa 2 - noticias */
+
+#noticia{
+	background: #bfbaba;
+	border: 5px solid gray;
+	padding: 10px;
+	width: 400px;
+}
+h2{
+	margin: 0px;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Fontes e cores</title>
+		<meta charset="utf-8">
+		<style type="text/css">
+			.bordas{border: 5px solid gray;
+				border-radius: 10px;
+				background: #0066cc;
+				color: white;}
+			.borda-fundo{border: 5px solid gray;
+				border-radius: 10px;
+				background: gray;
+				color: white;}
+			#cabecalho{font-family: "Arial Black", Gadget, sans-serif;}
+			/* 
+				sobre tamanhos de texto
+			px -> tamanho fixo (pixels)
+			% -> tamanho relativo a 16px = 100%
+			em ->tamanho relativo ao container pai 
+			*/
+
+			
+			#corfundo{background: #91DBDE;}
+			#cabborda{border: 5px solid #00cc66;
+				border-radius: 10px;
+				background: #00cc66;
+				color: #ffcc00;}
+			.formatacao{color: #00cc66; font-size: 80px;
+				font-family: "Comic Sans MS", cursive, sans-serif;}
+
+
+		</style>
+
+
+	</head>
+	<body id="corfundo">
+		<span id="cabecalho">
+		<h1 id="cabborda">Teste de fontes e cores</h1>
+		</span>
+
+		<div class="bordas">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua.
+		</div>	
+		<div>
+			Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+		</div><br>
+		<span class="borda-fundo">
+			Duis aute irure 
+		</span><br><br>
+		<div>
+			Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</div>
+		<p class="formatacao">Conteúdo</p>
+
+	</body>
+</html>

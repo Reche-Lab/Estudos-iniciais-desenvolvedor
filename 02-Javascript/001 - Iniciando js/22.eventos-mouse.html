@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>JS - eventos com o mouse</title>
+		<meta charset="utf-8">
+
+		<script>
+			function acao() {
+				alert('Evento disparado')
+			}
+			function acao2() {
+				alert('Evento 2 disparado')
+			}
+
+		</script>
+
+
+	</head>
+	<body>
+		
+		<div onclick="acao()" style="background: gray; height: 150px; width: 150px; margin: 10px; float: left;">
+			<h3 style="color: white;">
+				1 - ONCLICK - simple click
+			</h3>
+		</div>
+		<div ondblclick="acao()" style="background: purple; height: 150px; width: 150px; margin: 10px; float: left;">
+			<h3 style="color: orange;">
+				2 - ONDBLCLICK - double click
+			</h3>
+		</div>
+		<div onmouseup="acao()" style="background: orange; height: 150px; width: 150px; margin: 10px; float: left;">
+			<h3 style="color: gray;">
+				3 - ONMOUSEUP - simple click
+			</h3>
+		</div>
+		<div onmouseover="acao()" style="background: yellow; height: 150px; width: 150px; margin: 10px; float: left;">
+			<h3 style="color: blue;">
+				4 - ONMOUSEOVER - passando o mouse encima
+			</h3>
+		</div>
+		<div onmouseout="acao()" style="background: green; height: 150px; width: 150px; margin: 10px; float: left;">
+			<h3 style="color: white;">
+				5 - ONMOUSEOUT - tirando o mouse de cima
+			</h3>
+		</div>
+		<div onclick="acao()" onmouseout="acao2()" style="background: blue; height: 150px; width: 150px; margin: 10px; float: left;">
+			<h3 style="color: white;">
+				5 - "ONCLICK" e "ONMOUSEOUT"</h3> 
+			<p style="color: white;"> 
+				dois eventos no mesmo local clicando, e tirando o mouse de cima
+			</p>
+		</div>
+		
+
+	</body>
+</html>

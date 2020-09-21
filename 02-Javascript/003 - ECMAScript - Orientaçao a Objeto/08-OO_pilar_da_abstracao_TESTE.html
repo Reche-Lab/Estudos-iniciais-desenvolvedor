@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <title>Orientação a Objeto - Sistema de sofas</title>
+        <meta charset="utf-8">
+        
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+        <!-- Babel -->
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+        <script type="text/babel">
+            
+            class Sofas{
+                constructor(assentos, reclinavel, cor) {
+                    this.assentos = assentos
+                    this.reclinavel = reclinavel
+                    this.cor = cor
+                }
+                
+                reclinarEncosto() { 
+                    this.reclinavel === true ? console.log('reclinou') : console.log('não é reclinável')
+                }    
+            }
+
+            
+
+            let sofas = Array()
+            sofas.push(new Sofas(2, false, 'brown'))
+            sofas.push(new Sofas(3, true, 'gray'))
+            sofas.push(new Sofas(4, true, 'purple'))
+            sofas.push(new Sofas(2, false, 'blue'))
+
+            console.log(sofas[0])
+            sofas[0].reclinarEncosto()
+
+
+        ;
+        </script>
+    </head>
+
+    <body>   
+    </body>
+
+</html>

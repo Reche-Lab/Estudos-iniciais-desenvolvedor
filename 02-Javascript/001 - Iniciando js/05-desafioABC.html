@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>JS Null e Undefined</title>
+		<meta charset="utf-8">
+
+		<script>
+			
+			var a = 10
+			var b = 20
+			var c = null
+
+			console.log(a)
+			console.log(b)
+			console.log(c)
+
+			document.write('<h2>var a = ' + a +'.</h2>')
+			document.write('<h2>var b = ' + b +'.</h2>')
+			document.write('<h2>var c = ' + c +'.</h2>')
+
+			document.write('<hr>')
+
+
+			c = a
+			a = b
+			b = c
+			c = null
+
+			document.write('<h2>var a = ' + a +'.</h2>')
+			document.write('<h2>var b = ' + b +'.</h2>')
+			document.write('<h2>var c = ' + c +'.</h2>')
+
+			console.log(a)
+			console.log(b)
+			console.log(c)
+
+
+		</script>
+
+
+	</head>
+	<body>
+		
+
+	</body>
+</html>

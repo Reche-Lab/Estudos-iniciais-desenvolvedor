@@ -1,0 +1,46 @@
+<html>
+	<head>
+		<title>Array - Ordenação</title>
+
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <meta charset="utf-8">
+
+    <script type="text/javascript">
+      
+      var lista_frutas = Array()
+          lista_frutas[0] = 'Maça'
+          lista_frutas[1] = 'Uva'
+          lista_frutas[2] = 'Banana'
+          lista_frutas[3] = 'Morango'
+
+      console.log(lista_frutas)
+      console.log(lista_frutas.sort())
+
+      //--------------------------------
+      var lista_numeros = Array()
+          lista_numeros[0] = 12
+          lista_numeros[1] = 40
+          lista_numeros[2] = 3
+          lista_numeros[3] = 7
+          lista_numeros[4] = 19
+          lista_numeros[5] = 1
+          lista_numeros[6] = 11
+
+      console.log(lista_numeros.sort())
+      console.log(lista_numeros.sort(ordenarNumeros))
+      function ordenarNumeros(a, b) {
+        return a - b
+      }
+
+    </script>
+    
+
+	</head>
+
+  <body>
+    <h2 class="btn btn-primary btn-lg m-3">Ordenando Array</h2>
+    
+  </body>	
+
+</html>

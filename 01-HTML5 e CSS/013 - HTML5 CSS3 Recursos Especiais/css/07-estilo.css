@@ -1,0 +1,21 @@
+/*Header, Nav & Footer*/
+
+header{
+	border: 1px solid gray;
+	background: purple;
+	padding: 10px;
+	color: white;
+}
+
+nav{
+	background: #ccc;
+	padding: 10px;
+	margin-top: 10px;
+}
+
+
+footer{
+	background-color: gray;
+	margin-top: 10px; 
+	color: yellow;
+}

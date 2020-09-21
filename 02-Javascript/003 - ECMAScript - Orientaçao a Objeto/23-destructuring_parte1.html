@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title></title>
+        <meta charset="utf-8">
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+        <script type="text/babel">
+            
+            //destructuring
+
+            //----------Array simples
+            let frutas = ['Abacaxi', 'Uva', 'Pera', 'Mamão']
+            let [a, b, , c] = frutas //pulando um indice
+            console.log(a, b, c)
+
+            let [f, g, h, i, j='Banana'] = frutas
+            console.log(f, g, h, i, j)
+            console.log(frutas) // Array não absorve qdo destructured
+            
+            console.log('-----------------')
+            //----------Array multidimensionais
+            let coisas = [[...frutas], ['Jose', 'Maria']]
+            console.log(coisas)
+            let [, [, n2]] = coisas
+            console.log(n2)
+
+            let [[,,f3],[n1]] = coisas
+            console.log(f3, n1)
+
+
+        ;    
+        </script>
+    </head>
+
+    <body>
+    </body>
+
+</html>

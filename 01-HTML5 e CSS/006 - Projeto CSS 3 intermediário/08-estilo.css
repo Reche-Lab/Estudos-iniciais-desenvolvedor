@@ -1,0 +1,27 @@
+/* Formatando links */
+
+a{
+	padding: 5px 10px;
+	text-decoration: none;
+}
+/* os links possuem estados, como já visitados antes
+   como os não visitados, ou passando o cursor em cima */
+/* não visitados*/
+a:link{color: gray;}
+
+/* visitados*/
+a:visited{color: gray;}
+/* 	é possivel tratar formatação de dois estados ao mesmo tempo
+	a:link, a:visited{color:gray;} */
+
+/* passando o mouse encima*/
+a:hover{
+	color: #fff;
+	background: gray;}
+
+/* ativo quando clicado */
+a:active{
+	color: #fff;
+	background: black;}
+
+body{background: yellow;}

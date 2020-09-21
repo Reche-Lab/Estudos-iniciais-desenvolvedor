@@ -1,0 +1,245 @@
+/**{border: 1px solid yellow;}*/
+
+body{
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-size: 14px;
+	margin: 0px	
+}
+
+/*---------background---------*/
+#topo-fundo{
+	background: #2d4d73 url(../imagens/fundo.png) repeat-x bottom left;	
+	margin: 0px;
+	padding-top: 10px
+}
+
+#corpo-fundo{
+	background-color: white;
+	margin: -20px;
+}
+#rodape-fundo{
+	background-color: #2d4d73;
+	clear: both;
+}
+
+/*----Estrutura Cabeçallho, Corpo e Rodapé----*/
+#cabecalho{
+	height: 220px;
+	width: 800px;
+	margin: 0px auto;
+}
+
+#corpo{
+	background-color: white;
+	width: 800px;
+	margin: 20px auto;
+}
+
+#rodape{
+	width: 800px;
+	margin: 0px auto;
+	color: white;
+	padding: 20px;
+	font-size: 16px;
+}
+
+/*----Blocos do corpo do site----*/
+
+#bloco-esquerda{
+	float: left;
+	width: 200px;
+}
+
+#bloco-direito{
+	float: right;
+	width: 600px;
+}
+
+/*----colunas do corpo do site----*/
+
+#coluna-esquerda{
+	width: 190px;
+	float: left;
+	padding: 10px 0px 10px 10px;
+	background: url(../imagens/fundo-caixa.png) repeat left;
+}
+
+#coluna-central{
+	float: left;
+	width: 285px;
+	padding: 10px;
+	background: url(../imagens/fundo-caixa.png) repeat left;
+}
+
+#coluna-direita{
+	float: right;
+	width: 285px;
+	padding: 10px 10px 10px 0px;
+	background: url(../imagens/fundo-caixa.png) repeat left;
+}
+
+/*----Formatações background conteudos corpo----*/
+
+.conteudo-esquerdo{
+	background: white;
+	margin: 10px 0px;
+}
+
+#formulario-esquerdo{
+	background: white;
+	margin: 0px 0px;
+	font-size: 16px;
+	padding: 5px;
+}
+
+label{
+	cursor: pointer;
+}
+
+
+.conteudo1 div{
+	background: white;
+	padding: 5px 15px;
+	margin: 10px 0px;
+}
+
+/*----Formatações gerais----*/
+#cabecalho ul{
+	list-style-type: none;
+	padding: 0px;
+	background: url(../imagens/logo.png) no-repeat top left;
+	height: 220px;
+}
+
+#detalhe-topo{
+	background: url(../imagens/detalhe-topo.png) no-repeat top right;
+	
+}
+
+a{text-decoration: none;}
+
+#cabecalho li{
+	float: left;
+	background-color: #ad1f39;
+	color: white;
+	margin-top: 104px;
+	margin-left: 0px;
+	padding: 15px 0px;
+}
+
+
+#cabecalho a{
+	padding: 15px 25px;
+	background: url(../imagens/divisor.png) no-repeat left center;
+}
+
+#cabecalho a:link, #cabecalho a:visited{
+	color: white;
+} 
+
+#cabecalho a:hover{
+	color: #400d17;
+}
+
+.home #home{
+	background: #ed6189;
+}
+
+
+
+h3{
+	color: white;
+	background-color: #2d4d73;
+	padding: 5px;
+	margin: 0px 0px 10px 0px;
+}
+
+.conteudo-esquerdo li{
+	list-style-type: none;
+	border-bottom: 1px solid #ededf0;
+}
+
+.conteudo-esquerdo ul{
+	margin: 0px;
+	padding: 0px;
+}
+
+.conteudo-esquerdo a{
+	display: block;
+	padding: 10px;
+}
+
+.conteudo-esquerdo a:link, .conteudo-esquerdo a:visited{
+	color: black;
+}
+
+.conteudo-esquerdo li:hover{
+	background-color: #f7f7f7;	
+}
+
+.conteudo-esquerdo a:hover{
+	background: url(../imagens/marcador.png) no-repeat left;
+	padding-left: 20px;
+	margin: 0;
+}
+
+form input#email{
+	padding: 5px;
+	color: #CCC;
+}
+
+form input#submit{
+	padding: 5px;
+	color: white;
+	background-color: #ad1f39;
+	border: 1px solid #400d17;
+	font-size: 16px;
+
+}
+
+.conteudo1 img{
+	width: 250px;
+}
+
+.conteudo2 img{
+	width: 80px;
+	float: left;
+	margin-right: 10px;
+
+}
+
+h4{
+	color: #2d4d73;
+	margin: 0px
+}
+
+.conteudo2 span{
+	float: right;
+	width: 180px;
+	
+}
+
+hr{clear: both;}
+
+.conteudo2 a{
+	color: black;
+}
+
+.topico-conteudo2{
+	float: left;
+	background-color: white;
+	padding: 5px;
+	border-bottom: 1px solid #c9c9c9;
+}
+
+.topico-conteudo2:hover{
+	background: #ededf0;
+}
+
+.conteudo1 p{
+	background: #ad1f39;
+	color: white;
+	width: 150px;
+	padding: 3px;
+	margin: 3px;
+}

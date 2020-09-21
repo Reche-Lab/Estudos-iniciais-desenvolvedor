@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script type="text/babel">
+        
+    Object.prototype.attri50 = 'z'
+
+        let animal = {attri1: 'a'}
+        let vertebrado = {__proto__: animal, attri2: 'b'}
+        let ave = {__proto__: vertebrado, attri3: 'c', attri2: 'x'}
+
+        console.log(ave.attri3, ave.attri2, ave.attri1, ave.attri50,)
+
+        console.log(ave)
+
+    ;    
+    </script>
+</head>
+
+<body>
+    <div></div>
+</body>
+
+</html>

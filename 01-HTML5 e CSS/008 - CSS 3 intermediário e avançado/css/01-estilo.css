@@ -1,0 +1,33 @@
+/* Seletores */
+
+/* seletor universal */
+*{border: 1px solid red; margin:3px;}
+
+/* seletores de texto */
+h1{color: yellow;}
+
+/* seletores de classe */
+/*.verde{color: green;} /* aplica em qualquer texto */
+
+p.verde{color: blue;} /* aplica somente em paragrafo */
+
+/* seletores de ID */
+#cabecalho{background: orange;}
+
+/* seletor de filhos */
+li>a{
+	color: yellow;
+	text-decoration: none;
+}
+
+/* seletor de descendentes */
+h4 a{
+	color: orange;
+	text-decoration: line-through;
+}
+
+/* seletor de irmão adjacentes */
+h5+p{color: red;}
+
+/* seletor de irmão geral */
+h6~p{color: white;}

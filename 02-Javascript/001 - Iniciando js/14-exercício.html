@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>JS - Atribuição de valores</title>
+		<meta charset="utf-8">
+
+		<script>
+			
+			var nome = prompt('Digite seu nome:')
+			var altura = parseFloat(prompt('Digite sua altura em "cm":'))
+			var peso = parseFloat(prompt('Digite seu peso em "kg":'))
+
+			altura /= 100
+			var m = peso / (altura * altura)
+			var classificacao = null
+
+			if (m < 16) {classificacao = ' Baixo peso muito grave'}
+				else if (m >= 16 && m < 16.99)  {classificacao = ' Baixo peso grave'}
+				else if (m >= 17 && m < 18.49)  {classificacao = ' Baixo peso'}
+				else if (m >= 18.50 && m < 24.99)  {classificacao = ' Peso normal'}
+				else if (m >= 25 && m < 29.99)  {classificacao = ' Sobrepeso'}
+				else if (m >= 30 && m < 34.99)  {classificacao = ' Obesidade grau I'}
+				else if (m >= 35 && m < 39.99)  {classificacao = ' Obesidade grau II'}
+				else {classificacao = ' Obesidade grau III'}
+
+			alert(nome + ' possui índice de massa corporal igual a '+ m + ', sendo classificado como: ' + classificacao + '.')
+
+		</script>
+
+
+	</head>
+	<body>
+		
+
+		<h3>1) Crie uma aplicação para efetuar o cálculo do índice de massa corporal.  
+		 		Considere os seguintes critérios:</h3> 
+		<p>1) Ao executar o script a aplicação deve solicitar a entrada do nome da pessoa.</p> 
+		<p>2) Na sequência a aplicação deve solicitar que seja informada a altura da pessoa em centímetros.</p> 
+		<p>3) Na sequência a aplicação deve solicitar que seja informado o peso da pessoa.</p> 
+		<p>4) Após as estradas de dados, atente-se a conversão das informações para dados do tipo float.</p> 
+		<p>5) Converta a altura recebida em centímetros para metros. (basta dividir a altura por 100).</p>
+		<p>6) Internamente a aplicação deve executar o cálculo do índice de massa corporal através da expressão: M = peso (quilos) ÷ altura²</p> 
+		<p>7) Após identificar o índice de massa corporal o sistema deverá classificar em faixas descritivas utilizando os critérios abaixo:</p> 
+		<ul>
+			<li>a) Se M estiver abaixo de 16 : Baixo peso muito grave</li>
+			<li>b) Se M estiver entre 16 e 16,99:  Baixo peso grave</li> 
+			<li>c) Se M estiver entre 17 e 18,49: Baixo peso</li> 
+			<li>d) Se M estiver entre 18,50 e 24,99: Peso normal</li> 
+			<li>e) Se M estiver entre 25 e 29,99: Sobrepeso</li> 
+			<li>f) Se M estiver entre 30 e 34,99: Obesidade grau I</li> 
+			<li>g) Se M estiver entre 35 e 39,99: Obesidade grau II</li> 
+			<li>h) Se M for maior que 40: Obesidade grau III</li> 
+		</ul>
+
+		8) Ao término o sistema deve fornecer a seguinte saída para o usuário: 
+		“<b>Nome</b> possui índice de massa corporal igual a <b>m</b>, sendo classificado como: <b>classificacao</b>.” 
+		<p>*As informações em <b>negrito</b> são variáveis e devem ser substituídas pelos seus respectivos valores calculadas dentro da aplicação.</p> 
+
+	</body>
+</html>

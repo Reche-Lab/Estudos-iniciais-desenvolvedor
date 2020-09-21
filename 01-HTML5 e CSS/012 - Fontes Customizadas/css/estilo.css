@@ -1,0 +1,43 @@
+/*Fontes Customizadas*/
+
+
+
+@font-face{
+	font-family: Ancient;
+	src: url(../fonts/Ancient-Medium.woff);
+}
+
+@font-face{
+	font-family: BringHeart;
+	src: url(../fonts/BringHeart.woff);
+}
+
+@font-face{
+	font-family: "HawaiiLover";
+	src: url(../fonts/HawaiiLover.woff);
+}
+
+@font-face{
+	font-family: Madelina;
+	src: url(../fonts/MadelinaScript.woff);
+}
+
+.ancient{
+	font-size: 4em;
+	font-family: Ancient;
+}
+
+.bringheart{
+	font-size: 4em;
+	font-family: BringHeart;
+}
+
+.hawaii{
+	font-size: 4em;
+	font-family: "HawaiiLover";
+}
+
+.madelina{
+	font-size: 4em;
+	font-family: Madelina;
+}

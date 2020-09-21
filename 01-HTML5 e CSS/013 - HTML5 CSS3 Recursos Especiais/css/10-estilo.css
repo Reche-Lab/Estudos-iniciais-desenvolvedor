@@ -1,0 +1,29 @@
+/* F L E X B O X */
+
+#conteudo{
+	background: #dcdcdc;
+	height: 500px;
+	display: flex;
+
+	/* row|row-reverse|column|column-reverse */
+	flex-direction: row;
+
+	/*nowrap|wrap|Wrap-reverse*/
+	flex-wrap: nowrap;
+
+	/*flex-start|flex-end|center|space-between|space-around*/
+	justify-content: space-around;
+
+	/*stretch|center|flex-start|flex-end|baseline*/
+	align-items: baseline;
+
+
+}
+
+.item{
+	width: 100px;
+	height: 100px;
+	background: white;
+	border: 1px solid gray;
+	margin: 10px;
+}

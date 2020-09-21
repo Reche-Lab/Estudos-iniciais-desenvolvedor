@@ -1,0 +1,134 @@
+*{padding: 0px; margin: 0px;}
+
+body{
+	font-family: Helvetica, "Trebuchet MS", sams-serif;
+	background: #fff url(../imagens/bg.png);
+	margin: 15px;
+}
+
+#body{background: url(../imagens/topo-imagem-principal.png) no-repeat left top;
+		position: relative;
+		width: 100%;
+		margin: 0px auto;
+		height: 250px;
+		top: 0px;
+		left: 0px;
+		max-width: 1180px;
+		min-width: 800px;
+
+}		
+
+#topo{
+	background:  url(../imagens/topo-imagem-lateral.png) no-repeat left top;
+	height: 250px;
+	width: 450px;
+	position: absolute;	
+	top: 0px;
+	right: 0px;
+}
+
+#logo{padding: 15px;
+	margin-bottom: 170px;
+}
+
+#menu-superior{
+	margin: 20px 15px 15px 70px;
+	padding: 5px;
+	border-top: 1px green solid;
+	border-bottom: 1px green solid;
+}
+
+#menu-superior span{
+	margin-right: 20px;
+	margin-left: 20px;
+	font-size: 0.7em;
+
+}
+
+#menu-superior button{
+	padding: 5px;
+	background: linear-gradient(#FF6433, #FFBB33);
+	color: white;
+}
+
+#menu-inferior{
+	margin-left: 90px;
+}
+
+#menu-inferior ul{
+	width: 120px;
+}
+
+
+#menu-inferior li{
+	list-style: none;
+	font-size: 0.8em;
+	color: green;
+	padding: 5px;
+}
+
+#menu-inferior a{
+	text-decoration: none;
+	padding: 5px; 
+	width: 110px;
+	
+}
+
+#menu-inferior a:link, #menu-inferior a:visited{
+	color: gray;
+}
+
+#menu-inferior a:hover{
+	background: gray;
+	color: white;
+}
+
+#menu-inferior span{
+	float: left;
+}
+
+#menu-inferior span+span{
+	width: 190px;
+	text-align: center;
+}
+
+/*Formatação do corpo*/
+
+#corpo{ 
+	clear: both;
+	background: url(../imagens/bg-container.png) repeat-y top center;
+	float: left;	
+}
+
+#corpo-esquerdo{
+	float: left;
+	width: 45%;
+	padding: 2%;
+}
+
+#corpo-direito{
+	float: right;
+	width: 45%;
+	padding: 2%;
+}
+
+#corpo-direito img{
+	width: 150px;
+	float: left;
+	margin: 5px; 
+}
+
+#corpo-direito li{
+	list-style: none;
+	display: block;
+	border-bottom: 1px solid gray;
+	float: left;
+}
+
+#corpo-direito a{
+	text-decoration: none;
+}
+
+#corpo-direito h3{
+	padding: 8px 0px;
+}

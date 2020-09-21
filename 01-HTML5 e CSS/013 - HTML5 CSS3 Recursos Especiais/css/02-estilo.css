@@ -1,0 +1,43 @@
+#borda-arred{
+	width: 280px;
+	height: 220px;
+	background: #b9b941;
+	padding: 10px;
+	margin: 10px;
+	border-radius: 150px;
+	-webkit-border-radius: 150px;
+	-moz-border-radius: 150px;
+	
+	display: inline-block;
+	text-align: center;
+	padding-top: 60px;
+}
+
+
+img{
+	width: 300px;
+	display: inline-block;
+}
+
+.arredondar{
+	border-radius: 400px;
+}
+
+#resize-box{
+	width: 300px;
+	height: 300px;
+	background: #b9b941;
+	padding: 10px;
+	margin: 10px;
+	border-radius: 150px;
+	-webkit-border-radius: 150px;
+	-moz-border-radius: 150px;
+	
+	display: inline-block;
+	text-align: center;
+	padding-top: 60px;
+	
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}

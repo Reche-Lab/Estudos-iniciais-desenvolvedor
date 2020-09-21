@@ -1,0 +1,91 @@
+/*---- Layout largura fixa ----*/
+
+#lf-principal{width: 800px;
+	margin: 0 auto;}
+
+#lf-cabecalho{
+	background: gray;
+	text-align: center;
+	padding: 1px;
+}
+
+#lf-bloco-esquerdo{
+	background: #CCC;
+/*	display: inline-block;*/
+	width: 150px;
+	float: left; 
+}
+
+#lf-bloco-esquerdo li{list-style-type: none;}
+#lf-bloco-esquerdo a{text-decoration: none;}
+
+.lf-bloco-central{
+	display: inline-block;
+	width: 450px;
+	float: central;
+	padding: 10px;
+	margin: 5px;
+	
+}
+
+#lf-bloco-direito{
+	background: #CCC;
+	width: 150px;
+	float: right;
+	padding: 10px;	
+}
+
+#lf-rodape{
+	background: #CCC;
+	clear: both;
+	text-align: center;	
+}
+
+/*---- Layout largura liquida ----*/
+
+#liq-principal{
+	width: 80%;
+	margin: 0 auto;
+	min-width: 600px;
+	/*max-width: 960px;*/
+	}
+
+#liq-cabecalho{
+	background: url(../imagens/cabecalho2.jpg) repeat center;
+	text-align: center;
+	color: white;
+	padding: 1px;
+}
+
+#liq-bloco-esquerdo{
+	background: #CCC;
+/*	display: inline-block;*/
+	width: 20%;
+	float: left; 
+}
+
+#liq-bloco-esquerdo li{list-style-type: none;}
+#liq-bloco-esquerdo a{text-decoration: none;}
+
+.liq-bloco-central{
+	display: inline-block;
+	width: 55%;
+	float: central;
+	padding-left: 1%;
+}
+.liq-bloco-central img{
+	width: 90%
+}
+
+#liq-bloco-direito{
+	background: #CCC;
+	width: 20%;
+	float: right;
+	padding: 10px;	
+}
+
+#liq-rodape{
+	background: #CCC;
+	clear: both;
+	text-align: center;	
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title></title>
+        <meta charset="utf-8">
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+        <script type="text/babel">
+            
+            let arr = [10, 20, 30, 40]
+
+            let [a, ...resto] = arr
+
+            console.log(a)
+            console.log(resto)
+
+            //----------------
+
+            let obj = {
+                p:10, q:20, r:30, s: 40
+            }
+           
+            let {q, ...demais} = obj
+
+            console.log(q)
+            console.log(demais)
+
+        ;    
+        </script>
+    </head>
+
+    <body>
+    </body>
+
+</html>

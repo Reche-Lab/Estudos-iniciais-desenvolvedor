@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Seletores</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="css/01-estilo.css">	
+
+	</head>
+	<body>
+		Bordas vermelhas e margens 3px para tudo usando "* {}"
+		 <div id="cabecalho">
+		 	<h1>Titulo da pagina</h1>
+		 </div>
+		<div style="background: #f4f4f4;">
+			<h3> Class "verde" só funciona dentro de "p"	= p.verde{} </h3>
+			<span class="verde">Esse é um "span" com class="verde"></span> 
+			<p class="verde">Esse é uma "p" com class="verde"</p>
+		</div>
+		<div style="background: #CCC;">
+			<h3> Elementos Filho ex: li&gt;a{} -- filho direto </h3>
+			Obs.: Quem somos possui um span (não é direto)<br>
+			Obs.2: Link test não está em "li"
+			<ul>
+				<li><a href="">Home</a></li>
+				<li><span><a href="">Quem somos</a></li></span> 
+				<li><a href="">Contato</a></li>
+			</ul>
+			<a href="">Link de teste</a>
+		</div>
+		<div style="background: yellow;">
+			<h3>Elementos descendentes - ex: "h4 a{}"</h3>
+			Obs.: "a" não é filho direto de "h4" 
+			<h4>
+				<p> <a href="">"a" descende de "h4"</a></p>
+				<p> <a href="">"a" descende de "h4"</a></p>
+			</h4>
+			<a href="">"a" NÃO descende de "h4"</a>
+		</div>
+		<div style="background: pink; color: white;">
+			<h3>Seletor de irmão adjacente = o próximo elemento informado que não esta dentro dele - Ex: "h5+p{color: red;}"</h3>
+			<h5>
+				Esse é somente um texto dentro de "h5"
+				<p>Esse é um paragrafo dentro de "h5"</p>
+			</h5>
+			Esse é somente um texto fora de "h5" mas não um elemento como "div, "span" "h1" etc...
+			<p>Esse é o <b>primeiro</b> "p" fora de "h5"</p>
+			<p>Esse é o <b>segundo</b> "p" fora de "h5"</p>			
+			<p>Esse é o <b>terceiro</b> "p" fora de "h5"</p>
+		</div>
+		<div style="background: purple; color: yellow;">
+			<h3>Seletor de irmão geral - Ex.: "h6~p{color: whithe;}"</h3>
+			<h6>Esse é um texto "h6"</h6>
+			<span>Esse é um "span"</span>
+			<p>Esse é o <b>primeiro</b> "p"</p>
+			<p>Esse é o <b>segundo</b> "p"</p>
+			<span>Esse é um "span"</span>
+			<p>Esse é o <b>terceiro</b> "p"</p>
+
+		</div>
+
+	</body>
+</html>

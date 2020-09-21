@@ -1,0 +1,12 @@
+.borda{
+	border: 1px solid red;
+	display: inline;
+}
+.borda2{
+	border: 1px solid orange;
+	display: inline-block;
+}
+.borda3{
+	border: 1px solid yellow;
+	display: block;
+}

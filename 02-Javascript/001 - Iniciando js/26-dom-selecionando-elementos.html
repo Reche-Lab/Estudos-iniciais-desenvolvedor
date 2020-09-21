@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>JS - DOM selecionando elementos</title>
+		<meta charset="utf-8">
+
+			
+
+	</head>
+	<body>
+		<h2>Selecionando elementos com JavaScript</h2>
+		<h3 style="background: yellow; border: 1px solid orange; display: inline-block; color: red; padding: 10px; margin-bottom: 10px;">Abra o console do inspecionar</h3>
+		<hr>
+
+		<input 
+			type="text" 
+			placeholder="Digite seu nome"
+			id="nome_usuario" 
+			class="campo_texto" 
+			name="nome"
+		>
+		<script>
+			console.log(document.getElementById('nome_usuario'))
+			console.log(document.getElementsByTagName('input'))
+			console.log(document.getElementsByClassName('campo_texto'))
+			console.log(document.getElementsByName('nome'))
+		</script>
+
+	</body>
+</html>

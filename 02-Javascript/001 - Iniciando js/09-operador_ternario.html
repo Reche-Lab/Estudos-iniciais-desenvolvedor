@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>JS - if else - op. lógicos</title>
+		<meta charset="utf-8">
+
+		<script>
+			
+			var nota = prompt('Digite a nota do aluno:')
+			var faltas = prompt('Digite a quantidade de faltas:')
+
+			var media = 7
+			var faltas_permitidas = 15
+
+			if (nota >= media && faltas <= faltas_permitidas) {document.write('APROVADO em nota e faltas')} else {document.write('REPROVADO em nota ou faltas')}
+
+			document.write('<hr> E agora utilizando operador ternário <br><br>')
+
+			var resultado = (nota >= media && faltas <= faltas_permitidas) ? 'APROVADO' : 'REPROVADO'
+
+			document.write(resultado)
+
+
+		</script>
+
+
+	</head>
+	<body>
+		
+
+	</body>
+</html>

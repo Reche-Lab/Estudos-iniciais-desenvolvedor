@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>JS - Exercicio Funcoes</title>
+		<meta charset="utf-8">
+
+		<script>
+			
+			function aritimetica(num1, num2, operacao) {
+				var operacao = prompt('Olá, escolha entre um dos 4 tipos de operação: soma, subtração, multiplicação ou divisão.')
+				var num1 = parseFloat(prompt('Insiira o primeiro número'))
+				var num2 = parseFloat(prompt('Insiira o segundo número'))
+
+				switch (operacao) {
+					case 'soma':
+						alert(num1 + num2)
+						break
+					
+					case 'subtração':
+						alert(num1 - num2)
+						break
+					
+					case 'multiplicação':
+						alert(num1 * num2)
+						break
+					
+					case 'divisão':
+						alert(num1 / num2)
+						break
+					
+					default:
+						alert('Você inseriu algum número ou operação errada. Recarregue a página e tente novamente')
+				}
+			}
+
+			aritimetica()
+			
+
+		</script>
+
+
+	</head>
+	<body>
+		
+		<h3>1) Crie uma aplicação para efetuar cálculo aritméticos de soma e subtração.</h3>  
+		<p><b>Considere os seguintes critérios:</b></p>
+
+		<p>1) Ao executar o script a aplicação deve solicitar a entrada de um número, seguido de uma operação de soma ou subtração e posteriormente seguido de um segundo número.</p> 
+		<p>2) A operação deve ser inserida pelo usuário de forma textual, ou seja, quando o sistema solicita a operação o usuário deve informar o texto ‘soma’ ou ‘subtração’ (sem as aspas).</p> 
+		<p>3) Na sequência o sistema deve enviar os parâmetros para uma função efetuar o devido cálculo. Exemplo: calculo(num1, num2, operacao).</p> 
+		<p>4) A função deve executar o cálculo com base na operação informada pelo usuário e na sequência deve retornar o valor encontrado.</p>
+		<p>5) Ao término o sistema deve fornecer a seguinte saída para o usuário:</p> 
+		<br>
+		<p>O resultado é: "resultado".</p> 
+		<p>*A informação entre aspas é uma variável e deve ser substituída pelo seu respectivo valor calculada dentro da aplicação.</p> 
+
+
+	</body>
+</html>

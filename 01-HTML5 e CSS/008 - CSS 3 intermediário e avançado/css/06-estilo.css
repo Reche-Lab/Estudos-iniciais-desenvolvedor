@@ -1,0 +1,30 @@
+/*  Estilizando Formulários  */
+
+
+
+body{font-family: "Trebuchet MS", Helvetica, sans-serif;}
+
+form div{margin: 5px;}
+
+fieldset{
+	margin: 1em 0;
+	width: 300px;
+	border: 1px solid #CCC;
+	background-color: #f8f8f8;
+}
+
+legend{font-weight: bold;}
+
+label{
+	display: block;
+	cursor: pointer; 
+}
+
+input[type="text"] {width: 20em;}
+input[type="radio"] {margin-right: 1em;}
+
+textarea{
+	width: 20em;
+	height: 5em;
+}
+

@@ -1,0 +1,31 @@
+/* modelo de caixa */
+
+.conteudo1{
+	border: 1px solid orange;
+	
+	/*padding-top: 20px;
+	padding-right: 15px;
+	padding-bottom: 10px;
+	padding-left: 5px;*/
+
+	/*padding: 20px 15px 10px 5px;*/
+	
+	/*padding: 20px 5px;*/
+	padding: 20px; /*espaçamento para os 4 lados*/
+
+	/*margin segue o mesmo principio do padding, 
+	só que por fora da caixa*/
+	/*margin-top: 20px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	margin-left: 20px;*/
+	margin: 10px; /*espaçamento para os 4 lados*/
+
+	width: 300px;
+}
+
+.conteudo2{
+	border: 1px solid yellow;
+	margin-top: 50px;
+	width: 300px
+}

@@ -1,0 +1,35 @@
+
+<html>
+	<head>
+		<title>BOM - location</title>
+
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <meta charset="utf-8">
+
+    <script type="text/javascript">
+      setTimeout(function() {document.write('Teste setTimeout após 2 segundos. <br>')}, 2000)
+      setTimeout(function() {document.write('Teste setInterval após 2 segundos. <br>')}, 2000)
+
+
+      var i = 10
+      var x = setInterval(function() {
+        document.write(i + '-')
+        i--
+        if(i === 0) {
+          //window.location.reload()
+          clearInterval(x)
+        }
+      }, 2000)
+
+
+    </script>
+    
+
+	</head>
+
+  <body>
+    
+  </body>	
+
+</html>

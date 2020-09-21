@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>JS - DOM Manipulando Classes</title>
+		<meta charset="utf-8">
+
+		<style type="text/css">
+			
+			.emFoco{background: yellow;}
+			.semValor{background: white;}
+			.ateTres{background: red;}
+			.maisQueTres{background: green;}
+
+		</style>
+
+		<script>
+
+			var caracter = undefined
+
+			function fundoFoco() {
+				document.getElementById('caixaTexto').className = 'emFoco'
+			}	
+
+			function contaLetras() {
+				
+				caracter = document.getElementById('caixaTexto').value
+				var numCaracter = caracter.length
+				
+				if (numCaracter > 0 && numCaracter <=3) {
+					document.getElementById('caixaTexto').className = 'ateTres'	
+				}
+					else if (numCaracter > 3) {
+					document.getElementById('caixaTexto').className = 'maisQueTres'
+					}
+
+					else {document.getElementById('caixaTexto').className = 'semValor'}
+			}
+
+		</script>			
+
+	</head>
+	<body>
+		
+		<h3>1) Crie um campo 'input type="text"' e aplique os seguintes controles com base nos eventos abaixo:</h3>
+
+		<p> - No evento de foco modifique o background do input para amarelo.</p>
+		<p> - Quando o campo perder o foco, recupere o seu respectivo valor e:</p> 
+		<p> --- Caso o conteúdo contido no campo tenha menos de 3 caracteres o mesmo deve ter seu background alterado para vermelho.</p> 
+		<p> --- Caso o conteúdo contido no campo tenha 3 caracteres ou mais o background deve ser alterado para verde. </p>
+		<hr>
+		RESOLVENDO:
+		<hr>
+		<input type="text" id="caixaTexto" onfocus="fundoFoco()" onblur="contaLetras()" class="semValor">
+
+	</body>
+</html>

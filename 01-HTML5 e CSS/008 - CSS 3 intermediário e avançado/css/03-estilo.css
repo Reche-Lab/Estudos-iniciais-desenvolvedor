@@ -1,0 +1,102 @@
+/* Menu Vertical */
+
+#menu-vertical{
+	width: 195px;
+	font-weight: 600;
+	font-size: 0.8em;
+	}
+
+div#menu-vertical ul{margin: 0px;
+	padding-left: 0px;
+	list-style-type: none;}
+
+div#menu-vertical a{
+	text-decoration: none;
+	padding: 10px 30px;
+	/* line-height: 40px;*/
+	/*ao inves de padding: cima baixo eu poderia utilizar o line-height de 40px*/
+}
+
+/* as cores em background são utilizadas para casos de erro ao carregar a imagem do background*/ 
+div#menu-vertical a:link, div#menu-vertical a:visited{
+	color: black;
+	display: block;
+	background: #f7b600 url(../imagens/menu.png) no-repeat left center;
+}
+
+div#menu-vertical a:hover, div#menu-vertical a:active{
+	color: white; 
+	background: #f99200 url(../imagens/menu.png) no-repeat right center;	
+	display: block;	
+}
+
+/* mostrando qual pagina está selecionada */
+
+#home .home a:link, #home .home a:visited, 
+#sobre .sobre a:link, #sobre .sobre a:visited,
+#servicos .servicos a:link, #servicos .servicos a:visited,
+#noticias .noticias a:link, #noticias .noticias a:visited,
+#contato .contato a:link,#contato .contato a:link {
+	color: white;
+	background-position: right center; 
+}
+
+/*------  menu horizontal ------*/
+
+#menu-horizontal{background: #00b3b3 url(../imagens/fundo-horizontal.png) repeat left center;}
+
+#menu-horizontal a{
+	padding: 5px 30px;
+	display: inline-block;
+	margin: 0 -2px;
+	background: #00b3b3 url(../imagens/fundo-horizontal.png) repeat left center;
+	text-decoration: none;
+	color: white;
+	font-weight: 600;
+	background: url(../imagens/divisor.png) repeat-y;
+}
+
+#menu-horizontal a:hover,
+#menu-horizontal a:active {
+	background: #00ffff;
+	color: black;
+}
+
+#home #menu-horizontal .home,
+#sobre #menu-horizontal .sobre,
+#servicos #menu-horizontal .servicos,
+#noticias #menu-horizontal .noticias,
+#contato #menu-horizontal .contato {
+	background: #00ffff;
+	color: black;
+}
+
+/*------  menu com abas ------*/
+
+#menu-abas a{
+	padding: 10px 30px;
+	display: inline-block;
+	margin: 0 -2px;
+	background-image: linear-gradient(#996600, #f7b600);
+	text-decoration: none;
+	color: white;
+	font-weight: 600;
+	border: 1px solid white;
+	border-radius: 10px 10px 0px 0px;
+	
+}
+
+#menu-abas a:hover,
+#menu-abas a:active {
+	background-image: linear-gradient(#f7b600, #996600);
+	color: black;
+}
+
+#home #menu-abas .home,
+#sobre #menu-abas .sobre,
+#servicos #menu-abas .servicos,
+#noticias #menu-abas .noticias,
+#contato #menu-abas .contato {
+	background-image: linear-gradient(#cccc00, #ffffb3);
+	color: black;
+}

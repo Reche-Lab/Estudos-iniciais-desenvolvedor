@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>JS - Const</title>
+		<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+		<script type="text/babel">
+			
+			const SERIE = 'friends'
+
+			function x() {
+				const SERIE = 'The Walking Dead'
+				console.log('Dentro da função1: ' + SERIE)
+			}
+
+			x()
+
+			console.log('Fora da função: ' + SERIE)
+			
+			function y() {
+				console.log('Dentro da função2: ' + SERIE)
+			}
+
+			y()
+			{}
+		</script>
+
+	</head>
+	<body>
+
+	</body>
+</html>

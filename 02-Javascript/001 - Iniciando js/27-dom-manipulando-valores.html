@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>JS - DOM selecionando elementos</title>
+		<meta charset="utf-8">
+
+		<script type="text/javascript">
+			function distribuiCaracter() {
+				//selecionar valor digitado
+				var caracter = document.getElementById('entrada').value
+				document.getElementById('entrada').value = ''
+				var i
+
+				caracter.trim()
+
+											
+				switch (caracter) {
+					case '0':
+					case '1':
+					case '2':
+					case '3':
+					case '4':
+					case '5':
+					case '6':
+					case '7':
+					case '8':
+					case '9':
+						document.getElementById('apenas-numeros').value += caracter
+						break
+					default: 
+						document.getElementById('apenas-letras').value += caracter
+				}
+
+				
+			}
+
+		</script>			
+
+	</head>
+	<body>
+		
+		<input 
+		type="text" 
+		placeholder="Digite um caracter aqui" 
+		onkeyup="distribuiCaracter()"
+		id="entrada">
+
+		<hr>
+		<label>Letras</label>
+		<input type="text" disabled="disabled" id="apenas-letras">
+		<label>Números</label>
+		<input type="text" disabled="disabled" id="apenas-numeros">
+
+	</body>
+</html>

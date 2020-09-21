@@ -1,0 +1,74 @@
+<html>
+	<head>
+		<title>EXERCICIO</title>
+
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <meta charset="utf-8">
+
+    <script type="text/javascript">
+      var objetos = ['Cadeira', 'Impressora', 'Garfo']
+
+      function recuperaValor() {
+        var auxiliar = document.getElementById('valores').value
+        if (auxiliar === '') {
+          alert('Informe um valor válido')}
+          else {
+            if (objetos.indexOf(auxiliar) > -1) {
+              alert('Objeto já foi adicionado')
+            }
+              else {objetos.push(auxiliar)}
+            console.log(objetos)
+          }
+          document.getElementById('valores').value = ''
+        }
+
+      function ordenarValores() {
+        objetos.sort()
+        console.log(objetos)
+        document.getElementById('lista').innerHTML = objetos
+      }
+      
+    </script>
+    
+
+	</head>
+
+  <body>
+
+    <div class="container">
+    <p class="mt-3"><b>1) Crie uma aplicação web contendo um campo para entrada de texto (input text) e dois botões (buttons), sendo um botão com a descrição "Adicionar" e outro com a descrição "Ordenar", conforme imagem abaixo:</b></p> 
+    
+    <div class="mb-3">  
+      <input type="text" id="valores">
+      <button onclick="recuperaValor()">Adicionar</button>
+      <button onclick="ordenarValores()">Ordenar</button>
+      <br>
+      <div class="mt-2 bg-secondary text-white"><p class="ml-2" id="lista"></p></div>
+
+    </div>
+
+    <p>Após criar os elementos de interação com o usuário acima, crie um Array de nome objetos contendo os seguintes valores:</p>  
+    
+    <p class="text-primary">var objetos = Array('Cadeira', 'Impressora', 'Garfo')</p> 
+ 
+    <p>Os próximos passos são:</p> 
+    <p class="my-1">A) Ao clicar no botão "Adicionar" disparar função que irá:</p> 
+    <p class="ml-2 my-0">• Recuperar o valor contido no campo de texto. </p>
+    <p class="ml-2 my-0">• Verificar se o valor está vazio ou preenchido.</p> 
+     <p class="ml-3 my-0"> - Se vazio, exibir alert com a mensagem "Informe um valor válido".</p> 
+     <p class="ml-3 my-0"> - Se preenchido: </p>
+     <p class="ml-4 my-0">   ▪ Verificar se o valor informado já existe dentro do Array objetos. </p>
+     <p class="ml-4 my-0">   ▪ Se existir, exibir alert com a mensagem "Objeto já foi adicionado". </p>
+     <p class="ml-4 my-0">   ▪ Se não existir: </p>
+     <p class="ml-5 my-0">     • Incluir o valor preenchido no campo dentro do Array. </p>
+     <p class="ml-5 my-0">     • Efetuar um console.log do Array para debug (checar se está funcionado). </p>
+     <p class="ml-5 my-0">     •  Limpar o valor contido no campo de entrada de texto. </p>
+    <p class="my-1">B) Ao clicar no botão "Ordenar" disparar função que irá:</p> 
+    <p class="ml-3 my-0">  • Ordenar de forma alfabética os valores do Array de objetos. </p>
+    <p class="ml-3 my-0">  • Efetuar um console.log do Array para debug (checar se está funcionado). </p>
+    
+    </div>
+  </body>	
+
+</html>

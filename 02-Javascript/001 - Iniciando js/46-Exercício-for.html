@@ -1,0 +1,69 @@
+<html>
+	<head>
+		<title>For</title>
+
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <meta charset="utf-8">
+
+    <script type="text/javascript">
+       
+       document.write('<h3>RESPOSTA exercicio 1:</h3> <p>1) Baseado no exemplo da aula "Praticando um pouco - Percorrendo e listando itens de Arrays", implemente a mesma solução, porém utilizando o comando for.</p>') 
+       
+       document.write('<h4>1 - For in:</h4>')
+       var lista_frutas = []
+          lista_frutas[0] = 'Banana'
+          lista_frutas[1] = 'Maçã'
+          lista_frutas[2] = 'Morango'
+          lista_frutas[3] = 'Uva'
+
+        for (var y in lista_frutas) {
+          document.write(lista_frutas[y] + '<br>')
+          y++
+        }
+        document.write('<hr>')
+        //-----------------------------------------
+
+        document.write('<h4>2 - ForEach:</h4>')
+
+        lista_frutas.forEach(function(valor, indice, array) {
+          document.write(valor + '<br>')
+        }
+        )
+        document.write('<hr>')
+        //-----------------------------------------
+
+        document.write('<h4>3 - For:</h4>')
+        
+        for (var x = 0; x < lista_frutas.length; x++) {
+          document.write(lista_frutas[x] + '<br>')
+        }
+
+        document.write('<hr>')
+        //-----------------------------------------
+        document.write('<h3>RESPOSTA exercicio 2:</h3> <p>2) Baseado no exemplo da aula "Praticando um pouco - Criando uma tabuada de 1 a 10 (laços encadeados)", implemente a mesma solução, porém utilizando o comando while.</p>') 
+        document.write('<h4>3 - Tabuada usando <b>while</b>:</h4>')
+
+        var a = 1
+        var b = 0
+        while ( a <= 10){ 
+          while ( b <= 10 ) {
+            document.write(a + ' x ' + b + ' = ' + a*b + '<br>')
+            b++
+          } 
+          document.write('<hr>')
+          b=0 
+          a++
+        }
+        document.write('<h1>FIM DO EXERCÍCIO</h1>')
+        document.write('<hr>')
+    </script>
+    
+
+	</head>
+
+  <body>
+    
+  </body>	
+
+</html>

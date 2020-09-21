@@ -1,0 +1,48 @@
+
+<html>
+	<head>
+		<title>Funções com Parametros Variáveis</title>
+
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <meta charset="utf-8">
+
+    <script type="text/javascript">
+      
+      var video = Array()
+        video[1] = Array()
+          video[1]['nome'] = 'Fullmetal Alchemist'
+          video[1]['categoria'] = 'Anime'
+
+      
+      function getVideo(video) {
+        try {
+          console.log(video[0]['nome'])
+        } catch(erro) {
+            tratamentoErro(erro)
+            console.log('Agora sim podemos tratar esse erro')
+            throw new Error('Houve um erro, mas já estamos trabalhando nisso agora - Obs.: interrompe aplicação após o finally')
+          } finally {
+              console.log('Sempre passa por aqui (try / catch)')
+        }
+        console.log('A aplicação não morreu')
+      }
+
+      function tratamentoErro(erro) {
+        console.log(erro)
+      }
+
+      getVideo(video)
+
+    </script>
+    
+
+	</head>
+
+  <body>
+    
+    
+    
+  </body>	
+
+</html>
